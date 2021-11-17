@@ -1,0 +1,12 @@
+
+number = input('Digite o número: ')
+number_nao_validado = True
+
+while number_nao_validado:
+    if len(number) != 3:
+        print('Escreva um número de 3 dígitos...')
+        number = input('Digite o número: ')
+    else:
+        number_nao_validado = False
+
+print(f'Número invertido: {number[::-1]}')
